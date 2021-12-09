@@ -1,0 +1,123 @@
+// white swirl in hero section
+.hero-img {
+    height: 75%;
+    position: absolute;
+    left: 22.5%;
+    top: 15%;
+}
+
+// colourful squares in hero section
+.hero-squares {
+    position: relative;
+    width: 25vw;
+    left: 49.9%;
+    bottom: 2rem;
+}
+
+// animated arrow in hero section
+.hero-arrow {
+    width: 100vw;
+    display: block;
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: -9vh;
+    animation: bounce 1.7s linear infinite;
+    img {
+        width: 70%;
+    }
+}
+
+// pink line element
+.skills-title,
+.about-title {
+    .line {
+        width: 10%;
+        height: 1px;
+        background-color: $clr-salmon;
+    }
+}
+
+// another line element that gets displayed when below 800px
+.mobile-line {
+    display: none;
+}
+
+// pink squares used instead of bullet points for skills
+.single-skill img {
+    height: .7rem;
+}
+
+
+// scroll down elements
+.scroll-element {
+    display: grid;
+    place-content: center;
+    position: relative;
+    bottom: 5vh;
+    .scroll-square {
+        position: relative;
+        bottom: 50%;
+        right: 6%;
+        transform: translateY(-50%,-50%);
+        z-index: -50;
+        height: 110px
+    }
+    .scroll-down {
+        @extend %flex;
+        flex-direction: column;
+        p {
+            position: relative;
+            left: 1%;
+            transform: rotate(90deg);
+            margin-bottom: 2.6rem;
+            font-size: .85rem;
+            color: $clr-salmon;
+            font-family: $ff-roboto;
+            font-weight: $fw-400;
+            letter-spacing: $ltr-spc-2;
+        }
+        .scroll-arrow {
+            height: 0.65rem;
+        }
+    }
+}
+
+// wave svgs
+#top-wave {
+    transform: rotate(180deg);
+    position: relative;
+    top: -100vh;
+    margin-bottom: -101vh;
+    z-index: -100;
+}
+
+#bottom-wave {
+    position: absolute;
+    z-index: -100;
+}
+
+// pink border around project image
+.project-border {
+    position: absolute;
+    width: 55vw;
+    height: 55vh;
+    top: 5%;
+}
+
+.right-side .project-border {
+    right: 2%;
+}
+
+.left-side .project-border {
+    left: 2%;
+}
+
+// pink line element
+.featured-project {
+    .line {
+        width: 5rem;
+        height: 0.5px;
+        background-color: $clr-salmon;
+    }
+}

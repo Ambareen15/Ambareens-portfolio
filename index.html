@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambareen Khan's Portfolio</title>
+    <link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+
+<body>
+    <!-- loading screen -->
+    <section class="load">
+        <span>Loading...</span>
+        <img src="/images/loading-square.png" alt="a pink square">
+    </section>
+    <!-- end of loading screen -->
+    <!-- hero section -->
+    <section class="hero-section" id="hero-section">
+        <button id="toggle">
+            <div class="menu-line top-menu-line"></div>
+            <div class="menu-line middle-menu-line"></div>
+            <div class="menu-line bottom-menu-line"></div>
+        </button>
+        <!-- social icons buttons -->
+        <section class="icons-section">
+            <header id="mobile-header">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#form">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="icons">
+                <button class="linkedin-btn icon-btn icon-top">
+                    <a href="https://www.linkedin.com/in/khan-ambareen/" target="_blank"><img src="/icons/linkedin.png" class="icon" alt="linkedin icon"></a>
+                </button>
+                <button class="github-btn icon-btn">
+                    <a href="https://github.com/Ambareen15" target="_blank"><img src="/icons/github.png" class="icon" alt="github icon"></a>
+                </button>
+                <button class="instagram-btn icon-btn icon-bottom">
+                    <a href="#"><img src="/icons/instagram.png" class="icon" alt="instagram icon"></a>
+                </button>
+            </div>
+            <div class="icons">
+                <button class="resume-btn icon-btn icon-top">
+                    <a href="#"><img src="/icons/resume.png" class="icon" alt="resume/cv icon"></a>
+                </button>
+                <button class="email-btn icon-btn" data-id="Ambareenk321@gmail.com">
+                    <a href="#"><img src="/icons/email.png" class="icon" alt="mail icon"></a>
+                </button>
+                <button class="phone-btn icon-btn icon-bottom" data-id="+447574074011">
+                    <a href="#"><img src="/icons/phone.png" class="icon" alt="phone icon"></a>
+                </button>
+            </div>
+        </section>
+        <!-- main content box -->
+        <section class="main-hero-section">
+            <!-- navbar -->
+            <header id="desktop-header">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#form">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- name and job title -->
+            <div class="hero-content">
+                <div class="hero-info">
+                    <h1 id="name" class="hero-info-text">Hi, I'm Ambareen Khan</h1>
+                    <h2 id="role" class="hero-info-text stagger">A Front End Developer</h2>
+                    <h4 id="role-text" class="hero-info-text stagger">Looking For Her First Junior Developer Role</h4>
+                    <button class="hero-btn btn stagger"><a href="#form-section">GET IN TOUCH</a></button>
+                </div>
+                <div class="hero-swirl-img">
+                    <img src="/images/hero-img.png" class="hero-img" alt="a big swirl image">
+                    <img src="/images/mobile-hero.png" class="mobile-hero" alt="a big swirl image">
+                </div>
+                <div class="hero-squares-imgs">
+                    <svg id="Component_185_3" data-name="Component 185 – 3" xmlns="http://www.w3.org/2000/svg" width="504" height="534" viewBox="0 0 504 534" class="hero-squares">
+                        <rect id="Rectangle_24" data-name="Rectangle 24" width="84" height="89" rx="15" transform="translate(168 178)" fill="#3c3c4c"/>
+                        <rect id="Rectangle_27" data-name="Rectangle 27" width="84" height="89" rx="15" transform="translate(168 445)" fill="#3c3c4c"/>
+                        <rect id="Rectangle_25" data-name="Rectangle 25" width="84" height="89" rx="15" transform="translate(336 178)" fill="#2b2b38"/>
+                        <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(0 267)" fill="none" stroke="salmon" stroke-width="4">
+                          <rect width="84" height="89" rx="15" stroke="none"/>
+                          <rect x="2" y="2" width="80" height="85" rx="13" fill="none"/>
+                        </g>
+                        <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(420 178)" fill="none" stroke="salmon" stroke-width="4">
+                          <rect width="84" height="89" rx="15" stroke="none"/>
+                          <rect x="2" y="2" width="80" height="85" rx="13" fill="none"/>
+                        </g>
+                        <path id="Path_86" data-name="Path 86" d="M15,0H69A15,15,0,0,1,84,15V74A15,15,0,0,1,69,89H15A15,15,0,0,1,0,74V15A15,15,0,0,1,15,0Z" transform="translate(252)" fill="#2b2b38"/>
+                        <rect id="Rectangle_31" data-name="Rectangle 31" width="84" height="89" rx="15" transform="translate(252 267)" fill="#2b2b38"/>
+                        <rect id="Rectangle_29" data-name="Rectangle 29" width="84" height="89" rx="15" transform="translate(84 89)" fill="#6b6b6b"/>
+                        <rect id="Rectangle_32" data-name="Rectangle 32" width="84" height="89" rx="15" transform="translate(336 356)" fill="#6b6b6b"/>
+                      </svg>
+                </div>
+            </div>
+        </section>
+        <button id="back-to-top" class="back-to-top">
+            <a href="#hero-section"><img src="/images/back-to-top.png" alt="arrow up to go back to the pop of the page"></a>
+        </button>
+    </section>
+
+    <!-- animated arrow urging user to scroll down -->
+    <div class="hero-arrow stagger">
+        <img src="/images/hero-arrow.png" alt="chevron down arrow">
+    </div>
+    <!-- end of hero section -->
+
+    <!-- about section -->
+    <section id="about">
+        <div class="about-container">
+            <!-- about title -->
+            <div class="about-title fade">
+                <span class="line mobile-line"></span>
+                <h2>About me</h2>
+                <span class="line"></span>
+            </div>
+            <!-- description about me -->
+            <div class="about-info fade">
+                <p>I'm a 21 year old self-taught <span>web developer</span> with a passion for <span>problem solving </span>and writing <span>clean and efficient code.</span></p>
+                <!-- <p>Not only do I enjoy using code to bring designs to life but also adding functionality to websites using JavaScript never ceases to amaze me.</p> -->
+                <!-- <p>I,ve been teaching myself to code for about a year now and in that time I can't believe how much I have learnt</p> -->
+                <p>Something that <span>sets me apart from other developers</span> is that I don't try to get as many languages as I can under my belt with a shallow understanding, instead I do my utmost to <span>dig deep into the language</span> to get a more <span>solid and fluent grasp.</span> I'm looking for an environment where I can <span>continue to learn</span> and challenge myself.</p>
+                <p>In my spare time, I enjoy spending time with family/friends, going for walks, coding and taking care of my little dwarf hamster.</p>
+            </div>
+            <!-- button to view resume/cv -->
+            <button class="about-btn btn fade"><a href="#">View resume</a></button>
+        </div>
+    </section>
+    <!-- end of about section -->
+
+    <!-- scroll down element -->
+    <div class="scroll-element scroll-element-one">
+        <div class="scroll-down">
+            <p>Scroll down</p>
+            <img src="/images/scroll-arrow.png" alt="" class="scroll-arrow">
+        </div>
+        <img src="/images/scroll-square.png" alt="" class="scroll-square">
+    </div>
+    <!-- end of scroll down element -->
+
+    <!-- skills section -->
+    <section id="skills">
+        <div class="skills-section-container">
+            <!-- skills title -->
+            <div class="skills-title fade-in">
+                <span class="line mobile-line"></span>
+                <h2>My skills</h2>
+                <span class="line"></span>
+            </div>
+            <div class="skills-container">
+
+                <div class="skill-column fade-in">
+                    
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>HTML/HTML5</p>
+                    </div>
+                    <!-- end of single skill item -->
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>CSS/CSS3</p>
+                    </div>
+                    <!-- end of single skill item -->
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>JavaScript/ES6</p>
+                    </div>
+                    <!-- end of single skill item -->
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>API's</p>
+                    </div>
+                    <!-- end of single skill item -->
+                </div>
+
+                <div class="skill-column fade-in">
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>Sass/scss</p>
+                    </div>
+                    <!-- end of single skill item -->
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>Git/Github</p>
+                    </div>
+                    <!-- end of single skill item -->
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>Adobe XD</p>
+                    </div>
+                    <!-- end of single skill item -->
+
+                    <!-- single skill item -->
+                    <div class="single-skill">
+                        <img src="/images/skills-bullet-point.png" alt="a small pink square">
+                        <p>Visual Studio Code</p>
+                    </div>
+                    <!-- end of single skill item -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scroll down element -->
+    <div class="scroll-element scroll-element-two">
+        <div class="scroll-down">
+            <p>Scroll down</p>
+            <img src="/images/scroll-arrow.png" alt="" class="scroll-arrow">
+        </div>
+        <img src="/images/scroll-square.png" alt="" class="scroll-square">
+    </div>
+    <!-- end of scroll down element -->
+
+    <!-- wave svg -->
+    <div class="wave-img">
+        <img src="/images/wave.png" alt="a grey wave shape" id="top-wave">
+    </div>
+    <!-- end of wave svg -->
+
+    <!-- projects section -->
+    <section class="projects" id="work">
+
+        <!-- single project -->
+        <div class="single-project right-side single-project-one">
+            <div class="project-info project-info-one">
+                <!-- featured project -->
+                <div class="featured-project">
+                    <span class="line mobile-line"></span>
+                    <h4>Featured Project</h4>
+                    <span class="line"></span>
+                </div>
+                <!-- project title -->
+                <h2 class="project-title">Lorem ipsum dolor</h2>
+                <!-- project description -->
+                <div class="project-desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis deserunt excepturi, quisquam mollitia architecto, laboriosam suscipit repellendus, asperiores nam eaque nulla modi unde qui delectus quae ducimus in rem provident!
+                </div>
+                <!-- the skills used in the project -->
+                <div class="skills-used">
+                    <p>HTML/HTML5</p>
+                    <p>CSS/CSS3</p>
+                    <p>JavaScript/ES6</p>
+                    <p>Sass/scss</p>
+                </div>
+                <!-- buttons to view project and code -->
+                <div class="project-btns">
+                    <button class="site-btn btn"><a href="#">View site</a></button>
+                    <button class="code-btn btn"><a href="#">View code</a></button>
+                </div>
+            </div>
+
+            <div class="project-img-section project-img-one">
+                <!-- image of the project -->
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2plY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="a screenshot of a project" class="project-img">
+                <!-- design element border of the project image -->
+                <img src="/images/project-img-border.png" alt="a pink border" class="project-border">
+            </div>
+        </div>
+        <!-- end of single project -->
+
+        <!-- single project -->
+        <div class="single-project left-side single-project-two">
+
+            <div class="project-img-section project-img-two">
+                <!-- image of the project -->
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2plY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="a screenshot of a project" class="project-img">
+                <!-- design element border of the project image -->
+                <img src="/images/project-img-border.png" alt="a pink border" class="project-border">
+            </div>
+
+            <div class="project-info project-info-two">
+                <!-- featured project -->
+                <div class="featured-project">
+                    <span class="line mobile-line"></span>
+                    <h4>Featured Project</h4>
+                    <span class="line"></span>
+                </div>
+                <!-- project title -->
+                <h2 class="project-title">Lorem ipsum dolor</h2>
+                <!-- project description -->
+                <div class="project-desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis deserunt excepturi, quisquam mollitia architecto, laboriosam suscipit repellendus, asperiores nam eaque nulla modi unde qui delectus quae ducimus in rem provident!
+                </div>
+                <!-- the skills used in the project -->
+                <div class="skills-used">
+                    <p>HTML/HTML5</p>
+                    <p>CSS/CSS3</p>
+                    <p>JavaScript/ES6</p>
+                    <p>Sass/scss</p>
+                </div>
+                <!-- buttons to view project and code -->
+                <div class="project-btns">
+                    <button class="site-btn btn"><a href="#">View site</a></button>
+                    <button class="code-btn btn"><a href="#">View code</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- end of single project -->
+
+        <!-- single project -->
+        <div class="single-project right-side single-project-three">
+            <div class="project-info project-info-three">
+                <!-- featured project -->
+                <div class="featured-project">
+                    <span class="line mobile-line"></span>
+                    <h4>Featured Project</h4>
+                    <span class="line"></span>
+                </div>
+                <!-- project title -->
+                <h2 class="project-title">Lorem ipsum dolor</h2>
+                <!-- project description -->
+                <div class="project-desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis deserunt excepturi, quisquam mollitia architecto, laboriosam suscipit repellendus, asperiores nam eaque nulla modi unde qui delectus quae ducimus in rem provident!
+                </div>
+                <!-- the skills used in the project -->
+                <div class="skills-used">
+                    <p>HTML/HTML5</p>
+                    <p>CSS/CSS3</p>
+                    <p>JavaScript/ES6</p>
+                    <p>Sass/scss</p>
+                </div>
+                <!-- buttons to view project and code -->
+                <div class="project-btns">
+                    <button class="site-btn btn"><a href="#">View site</a></button>
+                    <button class="code-btn btn"><a href="#">View code</a></button>
+                </div>
+            </div>
+
+            <div class="project-img-section project-img-three">
+                <!-- image of the project -->
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2plY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="a screenshot of a project" class="project-img">
+                <!-- design element border of the project image -->
+                <img src="/images/project-img-border.png" alt="a pink border" class="project-border">
+            </div>
+        </div>
+        <!-- end of single project -->
+
+        <!-- single project -->
+        <div class="single-project left-side single-project-four" id="last-project">
+
+            <div class="project-img-section project-img-four">
+                <!-- image of the project -->
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2plY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="a screenshot of a project" class="project-img">
+                <!-- design element border of the project image -->
+                <img src="/images/project-img-border.png" alt="a pink border" class="project-border">
+            </div>
+
+            <div class="project-info project-info-four">
+                <!-- featured project -->
+                <div class="featured-project">
+                    <span class="line mobile-line"></span>
+                    <h4>Featured Project</h4>
+                    <span class="line"></span>
+                </div>
+                <!-- project title -->
+                <h2 class="project-title">Lorem ipsum dolor</h2>
+                <!-- project description -->
+                <div class="project-desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis deserunt excepturi, quisquam mollitia architecto, laboriosam suscipit repellendus, asperiores nam eaque nulla modi unde qui delectus quae ducimus in rem provident!
+                </div>
+                <!-- the skills used in the project -->
+                <div class="skills-used">
+                    <p>HTML/HTML5</p>
+                    <p>CSS/CSS3</p>
+                    <p>JavaScript/ES6</p>
+                    <p>Sass/scss</p>
+                </div>
+                <!-- buttons to view project and code -->
+                <div class="project-btns">
+                    <button class="site-btn btn"><a href="#">View site</a></button>
+                    <button class="code-btn btn"><a href="#">View code</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- end of single project -->
+
+    </section>
+
+    <!-- wave svg -->
+    <div class="wave-img">
+        <img src="/images/wave.png" alt="a grey wave shape" id="bottom-wave">
+    </div>
+    <!-- end of wave svg -->
+
+    <!-- end of projects section -->
+
+    <!-- form section -->
+    <section id="form-section" class="fade-contact">
+        <h2 id="form-title" class="fade-contact">Get in touch</h2>
+        <form action="https://formsubmit.co/Ambareenk321@gmail.com" method="POST" id="form">
+            <!-- <input type="hidden" name="_captcha" value="false"> -->
+            <!-- <input type="hidden" name="_autoresponse" value="Thank you for getting in touch!"> -->
+            <div class="name-email fade-contact">
+                <input type="text" name="name" placeholder="YOUR NAME" id="form-name" required>
+                <input type="email" name="email" placeholder="YOUR EMAIL" id="form-email" required>
+            </div>
+            <input type="text" name="name" placeholder="YOUR MESSAGE" id="form-message" class="fade-contact" required>
+            <button type="submit" class="btn submit-btn fade-contact">submit</button>
+        </form>
+    </section>
+    <!-- end of form section -->
+
+    <!-- footer tag -->
+    <p id="footer" class="fade-contact">Built And Designed By Ambareen Khan.</p>
+    <!-- end of footer tag -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

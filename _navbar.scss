@@ -1,0 +1,39 @@
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 25px 0 25px;
+    li {
+        list-style-type: none;
+        margin: 0 15px;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+        letter-spacing: $ltr-spc-1;
+        a {
+            text-decoration: none;
+            color: $clr-white;
+            font-family: $ff-poppins;
+            font-size: .8rem;
+            transition: all .5s;
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 0%;
+                content: '.';
+                color: transparent;
+                background: $clr-salmon;
+                height: 1px;
+                transition: all .5s;
+              }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#mobile-header nav {
+    display: none;
+}

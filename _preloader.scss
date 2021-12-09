@@ -1,0 +1,28 @@
+// loading screen
+.load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg-grey;
+    @extend %flex;
+    visibility: visible;
+    z-index: 999;
+    span {
+        color: $clr-salmon;
+        font-family: $ff-roboto;
+        letter-spacing: $ltr-spc-2;
+        font-size: 2.2rem;
+        margin-right: .9rem;
+    }
+    img {
+        height: 10vh;
+        animation: spin 3s linear infinite;
+    }
+}
+
+.hide-load {
+    z-index: -999;
+    visibility: hidden;
+}

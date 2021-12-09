@@ -1,0 +1,61 @@
+#form-section {
+    margin: 0 auto;
+    margin-top: 65vh;
+    background-color: $bg-dark;
+    width: 60vw;
+    border-radius: 10px;
+    #form-title {
+        text-align: center;
+        color: $clr-white;
+        text-transform: uppercase;
+        font-family: $ff-roboto;
+        font-weight: $fw-300;
+        font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+        padding: 5rem 0 3rem 0;
+        letter-spacing: $ltr-spc-1;
+    }
+    #form {
+        @extend %flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        input {
+            color: $clr-light-grey;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $clr-salmon;
+            padding: 1rem 1rem 1rem 0;
+            outline: none;
+            letter-spacing: $ltr-spc-1;
+        }
+
+        .name-email {
+            width: 100%;
+            @extend %flex;
+        }
+
+        #form-name {
+            width: 31%;
+            margin: 2rem 2rem 2rem 0;
+        }
+
+        #form-email {
+            width: 31%;
+            margin: 2rem 0 2rem 2rem;
+        }
+
+        #form-message {
+            width: 70%;
+            margin: 2rem;
+        }
+    }
+}
+
+#footer {
+    color: $clr-dark-grey;
+    text-align: center;
+    font-family: $ff-roboto;
+    letter-spacing: $ltr-spc-2;
+    font-size: clamp(.75rem, 1.5vw, .9rem);
+    position: relative;
+    bottom: -5.75rem;
+}

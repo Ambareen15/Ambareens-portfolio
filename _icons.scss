@@ -1,0 +1,46 @@
+.icons-section {
+    position: relative;
+    height: 70vh;
+    @extend %flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    background-color: $box-dark;
+    margin: 10px 20px 10px 10px;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+// hero icons that fix to side on scroll
+.fix-side {
+    .icons-section {
+        position: fixed;
+        left: 5rem;
+        z-index: 998;
+    }
+    .icons {
+        background-color: transparent;
+        opacity: 0.6;
+        margin: 0 20px;
+    }
+}
+
+// border radius changes when fixed
+.icon-top {
+    &:hover {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.icon-bottom {
+    &:hover {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.icon {
+    width: 20px;
+}

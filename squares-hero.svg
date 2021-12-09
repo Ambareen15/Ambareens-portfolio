@@ -1,0 +1,17 @@
+<svg id="Component_185_3" data-name="Component 185 – 3" xmlns="http://www.w3.org/2000/svg" width="504" height="534" viewBox="0 0 504 534">
+  <rect id="Rectangle_24" data-name="Rectangle 24" width="84" height="89" rx="15" transform="translate(168 178)" fill="#3c3c4c"/>
+  <rect id="Rectangle_27" data-name="Rectangle 27" width="84" height="89" rx="15" transform="translate(168 445)" fill="#3c3c4c"/>
+  <rect id="Rectangle_25" data-name="Rectangle 25" width="84" height="89" rx="15" transform="translate(336 178)" fill="#2b2b38"/>
+  <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(0 267)" fill="none" stroke="salmon" stroke-width="4">
+    <rect width="84" height="89" rx="15" stroke="none"/>
+    <rect x="2" y="2" width="80" height="85" rx="13" fill="none"/>
+  </g>
+  <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(420 178)" fill="none" stroke="salmon" stroke-width="4">
+    <rect width="84" height="89" rx="15" stroke="none"/>
+    <rect x="2" y="2" width="80" height="85" rx="13" fill="none"/>
+  </g>
+  <path id="Path_86" data-name="Path 86" d="M15,0H69A15,15,0,0,1,84,15V74A15,15,0,0,1,69,89H15A15,15,0,0,1,0,74V15A15,15,0,0,1,15,0Z" transform="translate(252)" fill="#2b2b38"/>
+  <rect id="Rectangle_31" data-name="Rectangle 31" width="84" height="89" rx="15" transform="translate(252 267)" fill="#2b2b38"/>
+  <rect id="Rectangle_29" data-name="Rectangle 29" width="84" height="89" rx="15" transform="translate(84 89)" fill="#6b6b6b"/>
+  <rect id="Rectangle_32" data-name="Rectangle 32" width="84" height="89" rx="15" transform="translate(336 356)" fill="#6b6b6b"/>
+</svg>

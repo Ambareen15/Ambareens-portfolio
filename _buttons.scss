@@ -1,0 +1,195 @@
+// mobile menu toggle
+#toggle {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.8rem;
+    cursor: pointer;
+    z-index: -1;
+    visibility: hidden;
+    .menu-line {
+        height: 2px;
+        width: 2rem;
+        background-color: $clr-white;
+        margin: 7px 0;
+        border-radius: 2px;
+    }
+}
+
+// icons fix to side on scroll
+
+.fix-side{
+    .icon-btn {
+        &:hover {
+            border-radius: 10px;
+        }
+    }
+}
+
+// arrow to go back up appears on scroll
+
+.show-btn {
+    .back-to-top {
+        z-index: 99999999;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease;
+    img {
+        width: 2.75rem;
+    }
+}
+
+.hero-btn {
+    margin-top: 3.75rem;
+    position: relative;
+    z-index: 5;
+}
+
+// cta buttons
+
+.btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: .08rem;
+    padding: 8px 12px;
+    border: 1px solid $clr-salmon;
+    font-size: .7rem;
+    border-radius: 2px;
+    transition: background .25s ease;
+    a {
+        color: $clr-salmon;
+        text-decoration: none;
+    }
+    &:hover {
+        cursor: pointer;
+        background: $clr-btn-hover;
+    }
+}
+
+
+// icon buttons
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    padding: 33.5px 17px;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg-grey;
+        box-shadow: 0 3px 40px rgba($color: #000000, $alpha: 0.4);
+    }
+}
+
+.phone-btn {
+    position: relative;
+    transition: background .3s ease;
+    &::after {
+        content: '+447574074011';
+        color:white;
+        background-color: $bg-grey;
+        padding: 10px 20px;
+        letter-spacing: $ltr-spc-1;
+        display: none;
+        animation: fade 1s ease;
+        z-index: 9999999;
+    }
+    &:hover {
+        &::after {
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: -130px;
+        }
+    }
+}
+
+.icon-btn {
+    @extend .phone-btn;
+}
+
+.linkedin-btn {
+    &::after {
+        content: 'Linkedin';
+    } 
+    &:hover {
+        &::after {
+            right: -95px;
+        }
+    }
+}
+
+.github-btn {
+    &::after {
+        content: 'Github';
+    } 
+    &:hover {
+        &::after {
+            right: -85px;
+        }
+    }
+}
+
+.instagram-btn {
+    &::after {
+        content: 'Instagram';
+    } 
+    &:hover {
+        &::after {
+            right: -105px;
+        }
+    }
+}
+
+.resume-btn {
+    &::after {
+        content: 'Resume/CV';
+    } 
+    &:hover {
+        &::after {
+            right: -115px;
+        }
+    }
+}
+
+.email-btn {
+    &::after {
+        content: 'Ambareenk321@gmail.com';
+    } 
+    &:hover {
+        &::after {
+            right: -220px;
+        }
+    }
+}
+
+.about-btn:hover {
+    background-color: #484858; 
+ }
+
+.site-btn,
+.code-btn {
+    padding: 8px 20px;
+}
+
+.site-btn {
+    margin-right: 1rem;
+}
+
+.submit-btn {
+    color: $clr-salmon;
+    margin: 3.5rem 0;
+    padding: .5rem 1.2rem;
+}
