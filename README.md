@@ -30,5 +30,6 @@ Another issue I had was that my mobile menu wouldn't close when navigating from 
 ##Get started
 If you wish to contribute to my portfolio...
 from your command line, first clone this repo:
+
 `$ git clone https://github.com/Ambareen15/ambareens-portfolio`
 
