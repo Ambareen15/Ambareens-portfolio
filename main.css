@@ -1,23 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
-#toggle {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 2.5rem;
-  right: 2.8rem;
-  cursor: pointer;
-  z-index: -1;
-  visibility: hidden;
-}
-
-#toggle .menu-line {
-  height: 2px;
-  width: 2rem;
-  background-color: #FCFCFC;
-  margin: 7px 0;
-  border-radius: 2px;
-}
-
 .fix-side .icon-btn:hover {
   border-radius: 10px;
 }
@@ -380,6 +361,14 @@ nav ul li a:hover::after {
   bottom: 2rem;
 }
 
+.email-copy,
+.phone-copy {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  left: -1rem;
+}
+
 .hero-arrow {
   width: 100vw;
   display: block;
@@ -488,7 +477,168 @@ nav ul li a:hover::after {
   background-color: #FA8072;
 }
 
-.icons-section, #form-section #form, #form-section #form .name-email, .load, .scroll-element .scroll-down, .hero-section, .about-container, .skills-section-container, .skills-container, .single-project {
+.open-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.open-menu .icons-top-mobile {
+  margin-bottom: 6rem;
+}
+
+.open-menu .icons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: transparent;
+  position: fixed;
+  bottom: 15vh;
+  opacity: 1;
+  z-index: 30;
+  -webkit-animation: fadeIn ease 1.5s;
+          animation: fadeIn ease 1.5s;
+}
+
+.open-menu .icon-btn {
+  margin: 0 5px;
+}
+
+.open-menu .icon-btn:hover {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.open-menu .icon-btn::after {
+  content: '';
+  padding: 0;
+}
+
+.open-menu .icon-btn .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.open-menu #mobile-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.open-menu #mobile-header nav ul {
+  z-index: 30;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+  position: fixed;
+  -webkit-animation: fadeIn ease 1.5s;
+          animation: fadeIn ease 1.5s;
+  top: 4rem;
+}
+
+.open-menu #mobile-header nav ul li {
+  margin-bottom: 3rem;
+}
+
+.open-menu #mobile-header nav ul li a {
+  font-size: 1.2rem;
+}
+
+.bg-cover {
+  width: 10px;
+  height: 10px;
+  background-color: #3c3c4c;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.open-menu .bg-cover {
+  -webkit-transform: scale(250);
+          transform: scale(250);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+#toggle {
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 99999;
+  position: fixed;
+  top: 4%;
+  right: 5%;
+}
+
+.menu-line {
+  display: block;
+  position: relative;
+}
+
+.menu-line,
+.menu-line::before {
+  width: 2.4em;
+  height: 1px;
+  background-color: #FCFCFC;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.menu-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.open-menu .menu-line {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open-menu .menu-line::before {
+  -webkit-transform: rotate(90deg) translate(9px);
+          transform: rotate(90deg) translate(9px);
+}
+
+.icons-section, #form-section #form, #form-section #form .name-email, .load, .scroll-element .scroll-down, .open-menu .icons, .hero-section, .about-container, .skills-section-container, .skills-container, .single-project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,6 +669,24 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fade {
@@ -1185,81 +1353,6 @@ html {
 }
 
 @media all and (max-width: 500px) {
-  .open-menu {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FA8072;
-    z-index: 999;
-  }
-  .open-menu.icons-section {
-    display: -ms-grid;
-    display: grid;
-    place-content: center;
-    width: 100vw;
-    left: 0;
-  }
-  .open-menu.icons-section .icons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0 auto;
-    background-color: transparent;
-    position: relative;
-    top: 4rem;
-    opacity: 1;
-  }
-  .open-menu.icons-section .icon-btn {
-    margin: 0 5px;
-  }
-  .open-menu.icons-section .icon-btn:hover {
-    background-color: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .open-menu.icons-section .icon-btn::after {
-    content: '';
-    padding: 0;
-  }
-  .open-menu.icons-section .icon-btn .icon {
-    height: 1.5rem;
-    width: 1.5rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .open-menu.icons-section #mobile-header nav {
-    display: block;
-  }
-  .open-menu.icons-section #mobile-header nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 2.5rem;
-    position: relative;
-    top: 4rem;
-  }
-  .open-menu.icons-section #mobile-header nav ul li {
-    padding-bottom: 3rem;
-  }
-  .open-menu.icons-section #mobile-header nav ul li a {
-    font-size: 1.2rem;
-  }
-  #toggle {
-    visibility: visible;
-    z-index: 99999999999;
-  }
   .mobile-hero {
     display: block;
     height: 110vh;
@@ -1280,7 +1373,7 @@ html {
     border-radius: 25px;
     margin: 0;
   }
-  .icons-section {
+  .icons {
     display: none;
   }
   nav {
@@ -1355,6 +1448,18 @@ html {
   }
   #form-section {
     width: 90vw;
+  }
+}
+
+@media all and (min-width: 500px) {
+  #toggle {
+    display: none;
+  }
+  .bg-cover {
+    display: none;
+  }
+  .open-menu {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

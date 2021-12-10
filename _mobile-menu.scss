@@ -1,0 +1,119 @@
+// mobile menu ui
+.open-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    .icons-top-mobile {
+        margin-bottom: 6rem;
+    }
+    .icons {
+        @extend %flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: fixed;
+        bottom: 15vh;
+        opacity: 1;
+        z-index: 30;
+        animation: fadeIn ease 1.5s;
+    }
+        .icon-btn {
+        margin: 0 5px;
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+        }
+        &::after {
+            content: '';
+            padding: 0;
+        }
+        .icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            object-fit: contain;
+        }
+    }
+    #mobile-header nav {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            ul {
+                z-index: 30;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 70%;
+                position: fixed;
+                animation: fadeIn ease 1.5s;
+            top: 4rem;
+                li {
+                    margin-bottom: 3rem;
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+}
+
+// mobile background cover
+.bg-cover {
+    width: 10px;
+    height: 10px;
+    background-color: $bg-grey;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    border-radius: 50%;
+    transition: transform 400ms;
+}
+
+.open-menu .bg-cover {
+    transform: scale(250);
+    transition: transform 1s;
+}
+
+// mobile menu button
+#toggle {
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 99999;
+    position: fixed;
+    top: 4%;
+    right: 5%;
+}
+
+
+.menu-line {
+    display: block;
+    position: relative;
+}
+
+.menu-line,
+.menu-line::before {
+    width: 2.4em;
+    height: 1px;
+    background-color: $clr-white;
+    transition: transform 200ms ease-in-out;
+}
+
+.menu-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+// mobile menu button transition
+.open-menu .menu-line {
+    transform: rotate(45deg);
+}
+
+.open-menu .menu-line::before {
+    transform: rotate(90deg) translate(9px);
+}

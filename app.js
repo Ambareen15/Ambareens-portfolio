@@ -92,47 +92,45 @@ tlsq1
 .from('#Rectangle_32', { yPercent: 20, xPercent: 30 }, 'start')
 .from('#Path_86', { yPercent: 0, xPercent: 120 }, 'start')
 
-// animate icons to fixed position on scroll
+// animate icons to fixed position on scroll after 500px screen-size
+
 let hero = document.querySelector('.hero-section');
 
-// function iconsScroll()  {
-//     let scrollIcons = gsap.timeline({
-//         scrollTrigger: {
-//             trigger: hero,
-//             start: "center center",
-//             end: "bottom center",
-//             scrub: true,
-//             onEnter() {
-//                 hero.classList.add('fix-side');
-//                 hero.classList.add('show-btn');
-//             },
-//             onLeaveBack() {
-//                 hero.classList.remove('fix-side');
-//                 hero.classList.remove('show-btn');
-//             }
-//         }
-//     })
-//     scrollIcons.to('.icons-section', { x: -100 });
-// };
-// iconsScroll();
+ScrollTrigger.saveStyles(".icons-section");
 
-let scrollIcons = gsap.timeline({
-    scrollTrigger: {
-        trigger: hero,
-        start: "center center",
-        end: "bottom center",
-        scrub: true,
-        onEnter() {
+ScrollTrigger.matchMedia({"(min-width: 500px)": function() {
+    let scrollIcons = gsap.timeline({
+          scrollTrigger: {
+          trigger: hero,
+          start: "center center",
+          end: "bottom center",
+          scrub: true,
+          onEnter() {
             hero.classList.add('fix-side');
-            hero.classList.add('show-btn');
         },
         onLeaveBack() {
             hero.classList.remove('fix-side');
-            hero.classList.remove('show-btn');
         }
-    }
-    })
-    scrollIcons.to('.icons-section', { x: -100 });
+        }
+      });
+    scrollIcons.to(".icons-section", {x: -100});
+  }
+});
+
+let scrollButton = gsap.timeline({
+    scrollTrigger: {
+    trigger: hero,
+    start: "center center",
+    end: "bottom center",
+    scrub: true,
+    onEnter() {
+      hero.classList.add('show-btn');
+  },
+  onLeaveBack() {
+      hero.classList.remove('show-btn');
+  }
+  }
+});
 
 // mobile menu
 const mobileMenu = document.getElementById('toggle');
@@ -140,40 +138,45 @@ const navbar = document.querySelector('.icons-section');
 
 mobileMenu.addEventListener('click', () => {
     navbar.classList.toggle('open-menu');
-    // if(navbar.classList.contains('open-menu')) {
-    //     navbar.classList.remove('open-menu')
-    // } else {
-    //     iconsScroll();
-    //     navbar.classList.add('open-menu')
-    // }
 })
 
-// if(navbar.classList.contains('open-menu')) {
-//     scrollIcons.invalidate();
-// } else {
-//     scrollIcons.to('.icons-section', { x: -100 });
-// }
-
+// make mobile menu close when nav link has been clicked on to go to that section of the page
+const navButtons = document.querySelectorAll('#mobile-header nav ul li a');
+navButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        navbar.classList.remove('open-menu');
+    })
+})
 
 
 // copy to clipboard
 const phoneContent = document.body.querySelector('.phone-btn');
-const phonedata = phoneContent.getAttribute('data-id');
 const emailContent = document.body.querySelector('.email-btn');
+const phonedata = phoneContent.getAttribute('data-id');
 const emaildata = emailContent.getAttribute('data-id');
+let copyEmail = document.querySelector('.email-copy');
+let copyPhone = document.querySelector('.phone-copy');
 
 phoneContent.addEventListener('click', () => {
   
     navigator.clipboard.writeText(phonedata);
 
-    alert(`${phonedata} copied to clipboard.`);
+    copyPhone.style.display = "block";
+
+    setTimeout(() => {
+        copyPhone.style.display = "none";
+    }, 1250);
 });
 
 emailContent.addEventListener('click', () => {
   
     navigator.clipboard.writeText(emaildata);
 
-    alert(`${emaildata} copied to clipboard.`);
+    copyEmail.style.display = "block";
+
+    setTimeout(() => {
+        copyEmail.style.display = "none";
+    }, 1250);
 });
 
 // clear form after submitting

@@ -14,6 +14,15 @@
     bottom: 2rem;
 }
 
+// copied to clipboard notification
+.email-copy,
+.phone-copy {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    left: -1rem;
+}
+
 // animated arrow in hero section
 .hero-arrow {
     width: 100vw;
