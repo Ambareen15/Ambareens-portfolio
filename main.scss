@@ -91,7 +91,7 @@ html {
 .main-hero-section {
     background-color: $box-dark;
     width: 75%;
-    height:70%;
+    height:70vh;
     border-radius: 10px;
 }
 
@@ -276,7 +276,7 @@ html {
 }
 
 .left-side .project-img-section {
-    right: 10%;
+    right: 6%;
 }
 
 .project-img {
@@ -693,6 +693,12 @@ html {
         width: 92vw;
         border-radius: 25px;
         margin: 0;
+    }
+
+    .fix-side {
+        .icons-section {
+            left: unset;
+        }
     }
 
     .icons {

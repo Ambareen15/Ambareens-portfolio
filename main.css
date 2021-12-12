@@ -57,7 +57,7 @@
 .icon-btn {
   background-color: transparent;
   border: none;
-  padding: 33.5px 17px;
+  padding: 44.2px 17px;
   cursor: pointer;
 }
 
@@ -88,8 +88,8 @@
 .phone-btn:hover::after, .icon-btn:hover::after {
   display: block;
   position: absolute;
-  top: 25px;
-  right: -130px;
+  top: 35px;
+  right: -140px;
 }
 
 .linkedin-btn::after {
@@ -106,14 +106,6 @@
 
 .github-btn:hover::after {
   right: -85px;
-}
-
-.instagram-btn::after {
-  content: 'Instagram';
-}
-
-.instagram-btn:hover::after {
-  right: -105px;
 }
 
 .resume-btn::after {
@@ -203,7 +195,7 @@ nav ul li a:hover::after {
 
 .icons-section {
   position: relative;
-  height: 70vh;
+  height: 72vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -214,6 +206,12 @@ nav ul li a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -223,6 +221,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  height: 100%;
 }
 
 .fix-side .icons-section {
@@ -305,6 +304,13 @@ nav ul li a:hover::after {
 #form-section #form #form-message {
   width: 70%;
   margin: 2rem;
+}
+
+#form-section #form #form-name:focus,
+#form-section #form #form-email:focus,
+#form-section #form #form-message:focus {
+  -webkit-box-shadow: inset 5rem 5rem #3c3c4c;
+          box-shadow: inset 5rem 5rem #3c3c4c;
 }
 
 #footer {
@@ -460,7 +466,7 @@ nav ul li a:hover::after {
   position: absolute;
   width: 55vw;
   height: 55vh;
-  top: 5%;
+  top: 4%;
 }
 
 .right-side .project-border {
@@ -468,7 +474,7 @@ nav ul li a:hover::after {
 }
 
 .left-side .project-border {
-  left: 2%;
+  left: 2.5%;
 }
 
 .featured-project .line {
@@ -500,8 +506,9 @@ nav ul li a:hover::after {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: transparent;
+  width: 60vw;
   position: fixed;
-  bottom: 15vh;
+  bottom: -30vh;
   opacity: 1;
   z-index: 30;
   -webkit-animation: fadeIn ease 1.5s;
@@ -509,7 +516,7 @@ nav ul li a:hover::after {
 }
 
 .open-menu .icon-btn {
-  margin: 0 5px;
+  margin: 0;
 }
 
 .open-menu .icon-btn:hover {
@@ -571,8 +578,8 @@ nav ul li a:hover::after {
 }
 
 .bg-cover {
-  width: 10px;
-  height: 10px;
+  width: 1px;
+  height: 1px;
   background-color: #3c3c4c;
   position: fixed;
   right: 0;
@@ -586,8 +593,8 @@ nav ul li a:hover::after {
 }
 
 .open-menu .bg-cover {
-  -webkit-transform: scale(250);
-          transform: scale(250);
+  -webkit-transform: scale(2500);
+          transform: scale(2500);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -602,7 +609,7 @@ nav ul li a:hover::after {
   z-index: 99999;
   position: fixed;
   top: 4%;
-  right: 5%;
+  right: 6%;
 }
 
 .menu-line {
@@ -776,7 +783,7 @@ html {
 .main-hero-section {
   background-color: rgba(39, 39, 51, 0.7);
   width: 75%;
-  height: 70%;
+  height: 70vh;
   border-radius: 10px;
 }
 
@@ -974,7 +981,7 @@ html {
 }
 
 .left-side .project-img-section {
-  right: 10%;
+  right: 6%;
 }
 
 .project-img {
@@ -1372,6 +1379,9 @@ html {
     width: 92vw;
     border-radius: 25px;
     margin: 0;
+  }
+  .fix-side .icons-section {
+    left: unset;
   }
   .icons {
     display: none;

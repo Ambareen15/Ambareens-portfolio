@@ -1,17 +1,20 @@
 .icons-section {
     position: relative;
-    height: 70vh;
+    height: 72vh;
     @extend %flex;
     flex-direction: column;
 }
 
 .icons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: $box-dark;
     margin: 10px 20px 10px 10px;
     border-radius: 10px;
     transition: all 1s ease;
+    height: 100%;
 }
 
 // hero icons that fix to side on scroll
