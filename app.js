@@ -142,10 +142,15 @@ mobileMenu.addEventListener('click', () => {
 
 // make mobile menu close when nav link has been clicked on to go to that section of the page
 const navButtons = document.querySelectorAll('#mobile-header nav ul li a');
+const backToTopBtn = document.querySelector('.back-to-top');
 navButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         navbar.classList.remove('open-menu');
     })
+})
+
+backToTopBtn.addEventListener('click', () => {
+    navbar.classList.remove('open-menu');
 })
 
 
