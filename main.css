@@ -262,7 +262,7 @@ nav ul li a:hover::after {
   text-transform: uppercase;
   font-family: "Roboto";
   font-weight: 300;
-  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
   padding: 5rem 0 3rem 0;
   letter-spacing: 1px;
 }
@@ -282,6 +282,7 @@ nav ul li a:hover::after {
   background: transparent;
   border: none;
   border-bottom: 1px solid #FA8072;
+  font-size: 1rem;
   padding: 1rem 1rem 1rem 0;
   outline: none;
   letter-spacing: 1px;
@@ -608,8 +609,8 @@ nav ul li a:hover::after {
   background-color: transparent;
   z-index: 99999;
   position: fixed;
-  top: 4%;
-  right: 6%;
+  top: 5%;
+  right: 11%;
 }
 
 .menu-line {
@@ -1458,6 +1459,49 @@ html {
   }
   #form-section {
     width: 90vw;
+  }
+}
+
+@media all and (max-width: 500px) and (max-height: 700px) {
+  .hero-content .hero-info {
+    height: 42%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .skills-title {
+    margin-bottom: 0;
+  }
+  .single-skill {
+    padding: 1rem 5rem;
+  }
+  .single-skill p {
+    font-size: .9rem;
+  }
+  .about-info {
+    line-height: 2;
+  }
+  .about-info p {
+    margin: 1.5rem 0;
+  }
+  .scroll-element-one {
+    bottom: 0;
+    top: 13vh;
+  }
+  .scroll-element-two {
+    margin-bottom: 10rem;
+  }
+  #top-wave,
+  #bottom-wave {
+    width: 100vw;
+  }
+  .projects {
+    padding-top: 5rem;
+  }
+  #form-section {
+    position: relative;
+    bottom: 5rem;
+    height: 96vh;
   }
 }
 

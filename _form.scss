@@ -10,7 +10,7 @@
         text-transform: uppercase;
         font-family: $ff-roboto;
         font-weight: $fw-300;
-        font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+        font-size: clamp(1rem, 1.5vw, 1.3rem);
         padding: 5rem 0 3rem 0;
         letter-spacing: $ltr-spc-1;
     }
@@ -23,6 +23,7 @@
             background: transparent;
             border: none;
             border-bottom: 1px solid $clr-salmon;
+            font-size: 1rem;
             padding: 1rem 1rem 1rem 0;
             outline: none;
             letter-spacing: $ltr-spc-1;

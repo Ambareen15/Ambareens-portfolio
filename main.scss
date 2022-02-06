@@ -776,6 +776,58 @@ html {
     }
 }
 
+@media all and (max-width: 500px) and (max-height: 700px) {
+
+    .hero-content{
+        .hero-info {
+            height: 42%;
+            justify-content: flex-end;
+        }
+    }
+
+    .skills-title {
+        margin-bottom: 0;
+    }
+
+    .single-skill {
+        padding: 1rem 5rem;
+        p {
+            font-size: .9rem;
+        }
+    }
+
+    .about-info {
+        line-height: 2;
+        p {
+            margin: 1.5rem 0;
+        }
+    }
+
+    .scroll-element-one {
+        bottom: 0;
+        top: 13vh;
+    }
+
+    .scroll-element-two {
+        margin-bottom: 10rem;
+    }
+
+    #top-wave,
+    #bottom-wave {
+        width: 100vw;
+    }
+
+    .projects {
+        padding-top: 5rem;
+    }
+
+    #form-section {
+        position: relative;
+        bottom: 5rem;
+        height: 96vh;
+    }
+}
+
 @media all and (min-width: 500px) {
     #toggle {
         display: none;
