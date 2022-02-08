@@ -16,7 +16,7 @@
         position: fixed;
         bottom: -30vh;
         opacity: 1;
-        z-index: 300;
+        z-index: 997;
         animation: fadeIn ease 1.5s;
     }
         .icon-btn {
@@ -41,7 +41,7 @@
             justify-content: center;
             align-items: center;
             ul {
-                z-index: 400;
+                z-index: 998;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -75,6 +75,7 @@
 .open-menu .bg-cover {
     transform: scale(2500);
     transition: transform 1s;
+    z-index: 996;
 }
 
 // mobile menu button

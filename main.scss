@@ -672,6 +672,10 @@ html {
 
 @media all and (max-width: 500px) {
 
+    body {
+        width: 100vw;
+    }
+
     .mobile-hero {
         display: block;
         height: 110vh;
@@ -681,6 +685,10 @@ html {
         right: 0;
         bottom: 0;
         width: 112vw;
+    }
+
+    .hero-img {
+        width: 100vw;
     }
 
     .hero-section {
@@ -810,11 +818,6 @@ html {
 
     .scroll-element-two {
         margin-bottom: 10rem;
-    }
-
-    #top-wave,
-    #bottom-wave {
-        width: 100vw;
     }
 
     .projects {
