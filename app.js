@@ -64,16 +64,16 @@ tl4.from(".fade-in", { opacity: 0, y: -20, stagger: .3, duration: 1.2 });
 tl5.from(".scroll-element-two", { opacity: 0, y: -30, delay: .4, duration: 1 });
 
 tl6.from('.project-info-one', { opacity: 0, y: 50, delay: .4 });
-tl6.from('.project-img-one', { opacity: 0, x: 300, duration: 1 });
+tl6.from('.project-img-one', { opacity: 0, y: 50, duration: 1 });
 
 tl7.from('.project-info-two', { opacity: 0, y: 50, delay: .4 });
-tl7.from('.project-img-two', { opacity: 0, x: -300, duration: 1 });
+tl7.from('.project-img-two', { opacity: 0, y: 50, duration: 1 });
 
 tl8.from('.project-info-three', { opacity: 0, y: 50, delay: .4 });
-tl8.from('.project-img-three', { opacity: 0, x: 300, duration: 1 });
+tl8.from('.project-img-three', { opacity: 0, y: 50, duration: 1 });
 
 tl9.from('.project-info-four', { opacity: 0, y: 50, delay: .4 });
-tl9.from('.project-img-four', { opacity: 0, x: -300, duration: 1 });
+tl9.from('.project-img-four', { opacity: 0, y: 50, duration: 1 });
 
 tl10.from('.fade-contact', { opacity: 0, y: -10, stagger: .3 });
 
