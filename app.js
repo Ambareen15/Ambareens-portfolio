@@ -9,6 +9,14 @@ window.addEventListener('load', () => {
 });
 
 
+// safari mobile menu colour optimisation
+const bgCover = document.getElementById('bg-cover');
+
+if(navigator.userAgent.includes("Safari")) {
+    bgCover.style.backgroundColor = "#3c3c4c";
+};
+
+
 // name typing out in hero section
 let typeee = document.getElementById('name');
 let typeName = typeee.textContent;
