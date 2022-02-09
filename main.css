@@ -583,7 +583,7 @@ nav ul li a:hover::after {
 .bg-cover {
   width: 1px;
   height: 1px;
-  background-color: #3c3c4c;
+  background-color: black;
   position: fixed;
   right: 0;
   top: 0;
