@@ -12,8 +12,8 @@ window.addEventListener('load', () => {
 // safari mobile menu colour optimisation
 const bgCover = document.getElementById('bg-cover');
 
-if(navigator.userAgent.includes("Safari")) {
-    bgCover.style.backgroundColor = "#3c3c4c";
+if(window.navigator.userAgent.includes("Safari")) {
+    bgCover.setAttribute ('style', 'background-color: #3c3c4c !important;');
 };
 
 
