@@ -63,7 +63,7 @@
 .bg-cover {
     width: 1px;
     height: 1px;
-    background-color: $bg-grey;
+    background-color: $bg-grey !important;
     position: fixed;
     right: 0;
     top: 0;
