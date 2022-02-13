@@ -68,13 +68,15 @@
     right: 0;
     top: 0;
     z-index: 20;
-    border-radius: 50%;
-    transition: transform 400ms;
+    // border-radius: 50%;
+    // transition: transform 400ms;
 }
 
 .open-menu .bg-cover {
-    transform: scale(2500);
-    transition: transform 1s;
+    // transform: scale(2500);
+    // transition: transform 1s;
+    width: 100vw;
+    height: 100vh;
     z-index: 996;
     opacity: 1;
 }

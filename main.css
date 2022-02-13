@@ -588,20 +588,11 @@ nav ul li a:hover::after {
   right: 0;
   top: 0;
   z-index: 20;
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .open-menu .bg-cover {
-  -webkit-transform: scale(2500);
-          transform: scale(2500);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  width: 100vw;
+  height: 100vh;
   z-index: 996;
   opacity: 1;
 }
