@@ -1412,7 +1412,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 100vw;
   }
   #about {
@@ -1430,9 +1430,12 @@ html {
     text-align: center;
     margin: 0 auto;
   }
+  .about-info p {
+    margin: 1.25rem 0;
+  }
   .about-btn {
     display: block;
-    margin: 2.75rem auto;
+    margin: 2.5rem auto;
   }
   .scroll-element-one {
     bottom: 0;
