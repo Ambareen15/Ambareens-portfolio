@@ -193,10 +193,10 @@ emailContent.addEventListener('click', () => {
 });
 
 // clear form after submitting
-const form = document.getElementById('form');
-const formInput = document.querySelectorAll('.form-input');
-form.addEventListener('submit', () => {
-    formInput.forEach(input => {
-        input.value = "";
-    })
-});
+// const form = document.getElementById('form');
+// const formInput = document.querySelectorAll('.form-input');
+// form.addEventListener('submit', () => {
+//     formInput.forEach(input => {
+//         input.value = "";
+//     })
+// });

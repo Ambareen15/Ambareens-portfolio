@@ -1276,10 +1276,6 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #form-section #form .form-input {
-    width: 70%;
-    margin: 2rem;
-  }
   #form-section #form .submit-btn {
     color: #FA8072;
     padding: .5rem 1.2rem;
