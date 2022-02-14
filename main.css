@@ -288,28 +288,12 @@ nav ul li a:hover::after {
   letter-spacing: 1px;
 }
 
-#form-section #form .name-email {
-  width: 100%;
-}
-
-#form-section #form #form-name {
-  width: 31%;
-  margin: 2rem 2rem 2rem 0;
-}
-
-#form-section #form #form-email {
-  width: 31%;
-  margin: 2rem 0 2rem 2rem;
-}
-
-#form-section #form #form-message {
+#form-section #form .form-input {
   width: 70%;
-  margin: 2rem;
+  margin: 1.75rem;
 }
 
-#form-section #form #form-name:focus,
-#form-section #form #form-email:focus,
-#form-section #form #form-message:focus {
+#form-section #form .form-input:focus {
   -webkit-box-shadow: inset 5rem 5rem #3c3c4c;
           box-shadow: inset 5rem 5rem #3c3c4c;
 }
@@ -641,7 +625,7 @@ nav ul li a:hover::after {
           transform: rotate(90deg) translate(9px);
 }
 
-.icons-section, #form-section #form, #form-section #form .name-email, .load, .scroll-element .scroll-down, .open-menu .icons, .hero-section, .about-container, .skills-section-container, .skills-container, .single-project {
+.icons-section, #form-section #form, .load, .scroll-element .scroll-down, .open-menu .icons, .hero-section, .about-container, .skills-section-container, .skills-container, .single-project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1292,21 +1276,7 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #form-section #form .name-email {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #form-section #form #form-name {
-    width: 70%;
-    margin: 1.5rem 0;
-  }
-  #form-section #form #form-email {
-    width: 70%;
-    margin: 1.5rem 0;
-  }
-  #form-section #form #form-message {
+  #form-section #form .form-input {
     width: 70%;
     margin: 2rem;
   }

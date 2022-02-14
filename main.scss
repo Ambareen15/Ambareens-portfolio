@@ -597,21 +597,7 @@ html {
         border-radius: 10px;
         #form {
             justify-content: center;
-            .name-email {
-                flex-direction: column;
-            }
-    
-            #form-name {
-                width: 70%;
-                margin: 1.5rem 0;
-            }
-    
-            #form-email {
-                width: 70%;
-                margin: 1.5rem 0;
-            }
-    
-            #form-message {
+            .form-input{
                 width: 70%;
                 margin: 2rem;
             }

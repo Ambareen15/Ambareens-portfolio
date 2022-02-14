@@ -29,31 +29,14 @@
             letter-spacing: $ltr-spc-1;
         }
 
-        .name-email {
-            width: 100%;
-            @extend %flex;
-        }
-
-        #form-name {
-            width: 31%;
-            margin: 2rem 2rem 2rem 0;
-        }
-
-        #form-email {
-            width: 31%;
-            margin: 2rem 0 2rem 2rem;
-        }
-
-        #form-message {
+        .form-input {
             width: 70%;
-            margin: 2rem;
+            margin: 1.75rem;
+            &:focus {
+                box-shadow: inset 5rem 5rem $bg-grey;
+            }
         }
 
-        #form-name:focus,
-        #form-email:focus,
-        #form-message:focus {
-            box-shadow: inset 5rem 5rem $bg-grey;
-        }
     }
 }
 

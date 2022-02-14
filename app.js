@@ -194,11 +194,9 @@ emailContent.addEventListener('click', () => {
 
 // clear form after submitting
 const form = document.getElementById('form');
-const formName = document.getElementById('form-name');
-const formEmail = document.getElementById('form-email');
-const formMessage = document.getElementById('form-message');
+const formInput = document.querySelectorAll('.form-input');
 form.addEventListener('submit', () => {
-    formName.value = '';
-    formEmail.value = '';
-    formMessage.value = '';
+    formInput.forEach(input => {
+        input.value = "";
+    })
 });
