@@ -21,7 +21,7 @@ Another issue I had was that my mobile menu wouldn't close when navigating from 
 * social/contact icons fix to side when user starts scrolling
 * button to go back to the top of page displays when user starts scrolling
 * arrow on hero page moves up and down infinitely
-* formsubmit API used to send form submissions to my inbox
+* form spree API used to send form submissions to my inbox
 * fully responsive
 
 ## To Do
