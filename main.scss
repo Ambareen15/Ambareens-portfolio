@@ -356,6 +356,27 @@ html {
 
 
 
+
+
+
+.scroll-element-two {
+    margin-bottom: 12rem;
+}
+
+.single-project {
+    padding-bottom: 3.5rem;
+}
+
+.featured-project {
+    margin-top: 7rem;
+}
+
+#top-wave {
+    top: -100vh;
+}
+
+
+
 // MEDIA QUERIES FOR HERO SVGS
 
 @media all and (max-width: 1262px) {
@@ -502,7 +523,7 @@ html {
 
 // MEDIA QUERIES FOR TABLET SCREENS - 800PX AND BELOW
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 810px) {
 
     .about-title,
     .skills-title {
@@ -552,6 +573,10 @@ html {
     .site-btn,
     .code-btn {
         margin: 1rem 5px 3rem 5px;
+    }
+
+    #top-wave {
+        top: -100vh;
     }
 
     .project-img {
@@ -750,6 +775,22 @@ html {
     .scroll-element-one {
         bottom: 0;
         top: 8vh;
+    }
+
+    .scroll-element-two {
+        margin-bottom: 12rem;
+    }
+
+    .single-project {
+        padding-bottom: 3.5rem;
+    }
+
+    .featured-project {
+        margin-top: 7rem;
+    }
+
+    #top-wave {
+        top: -100vh;
     }
 
     #form-section {
