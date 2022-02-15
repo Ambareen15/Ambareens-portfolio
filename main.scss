@@ -250,7 +250,7 @@ html {
 .single-project {
     width: 100vw;
     @extend %flex;
-    padding-bottom: 15rem;
+    padding: 5rem 0 5rem 0;
 }
 
 #last-project {
@@ -363,13 +363,6 @@ html {
     margin-bottom: 12rem;
 }
 
-.single-project {
-    padding-bottom: 3.5rem;
-}
-
-.featured-project {
-    margin-top: 7rem;
-}
 
 #top-wave {
     top: -100vh;
@@ -786,7 +779,7 @@ html {
     }
 
     .featured-project {
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
 
     #top-wave {
