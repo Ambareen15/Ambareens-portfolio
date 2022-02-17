@@ -935,7 +935,7 @@ html {
 
 .single-project {
   width: 100vw;
-  padding-bottom: 15rem;
+  padding: 5rem 0 5rem 0;
 }
 
 #last-project {
@@ -1045,6 +1045,14 @@ html {
 
 .left-side .project-info {
   text-align: right;
+}
+
+.scroll-element-two {
+  margin-bottom: 12rem;
+}
+
+#top-wave {
+  top: -100vh;
 }
 
 @media all and (max-width: 1262px) {
@@ -1187,7 +1195,7 @@ html {
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 810px) {
   .about-title h2,
   .skills-title h2 {
     padding-left: 10px;
@@ -1230,6 +1238,9 @@ html {
   .site-btn,
   .code-btn {
     margin: 1rem 5px 3rem 5px;
+  }
+  #top-wave {
+    top: -100vh;
   }
   .project-img {
     width: 90vw;
@@ -1406,6 +1417,18 @@ html {
   .scroll-element-one {
     bottom: 0;
     top: 8vh;
+  }
+  .scroll-element-two {
+    margin-bottom: 12rem;
+  }
+  .single-project {
+    padding-bottom: 3.5rem;
+  }
+  .featured-project {
+    margin-top: 3rem;
+  }
+  #top-wave {
+    top: -100vh;
   }
   #form-section {
     width: 90vw;
